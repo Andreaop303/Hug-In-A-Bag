@@ -1,139 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hug in a Bag</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter&family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .wishlist-icon {
-            width: 20px;
-            height: 20px;
-            margin-right: 8px;
-            vertical-align: middle;
-        }
-        nav a {
-            display: inline-flex;
-            align-items: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hug in a Bag – Send Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #fef9f8;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: #e29595;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #9c6b68;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #fff3f0;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      font-family: 'Playfair Display', serif;
+      color: #e38d8d;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      color: #d47171;
+      margin-bottom: 20px;
+    }
+
+    .holiday-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .holiday-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .holiday-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .holiday-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .holiday-card h3 {
+      margin: 15px;
+      font-size: 22px;
+      color: #b75e5e;
+    }
+
+    .holiday-card p {
+      margin: 0 15px 20px;
+      color: #777;
+    }
+
+    footer {
+      background: #fff8f6;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <span class="roses">Hug</span> <span class="by-jenny">in a Bag</span>
-            </div>
-           <nav>
-                <a href="#whats-hot">What's Hot</a>
-                <a href="#mothers-day">Mother's Day</a>
-                <a href="#fathers-day">Father's Day</a>
-                <a href="#graduation">Graduation</a>
-                <a href="#wishlist" style="color: #e26d9b; font-weight: bold;">
-                    <img src="https://png.pngtree.com/png-clipart/20221213/ourmid/pngtree-pink-heart-with-black-outline-clipart-png-image_6522011.png" alt="Wishlist" class="wishlist-icon">
-                    Wishlist
-                </a>
-            </nav>
-    </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Welcome to Hug in a Bag!</h1>
-            <p>Send love in every sealed bag. Shop unique gifts for every occasion!</p>
-            <button class="shop-now">Shop Now</button>
-        </div>
-    </section>
+  <header>
+    <div class="logo">Hug in a Bag</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Occasions</a>
+      <a href="#">Wishlist</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-    <section id="whats-hot" class="whats-hot">
-  <div class="container">
-    <h2>What's Hot Right Now</h2>
-    <div class="whats-hot-items">
-      <div class="whats-hot-item">
-        <img src="https://i.imgur.com/1eGbNkk.jpg" alt="Mother’s Day Gift" style="width:100%; border-radius: 8px; margin-bottom: 20px;">
+  <section class="hero">
+    <h1>Send love in every sealed bag</h1>
+    <p>Curated gift bags for every moment worth celebrating</p>
+  </section>
+
+  <section class="section">
+    <h2>What's Hot</h2>
+    <div class="holiday-grid">
+      <div class="holiday-card">
+        <img src="https://i.imgur.com/mothersdayBag.jpg" alt="Mother's Day Bag" />
         <h3>Mother's Day</h3>
-        <button>Shop Mother's Day Gifts</button>
+        <p>Celebrate mom with handwritten love, rose petals, and handmade touches.</p>
       </div>
-      <div class="whats-hot-item">
-        <img src="https://i.imgur.com/7YZayUE.jpg" alt="Father’s Day Gift" style="width:100%; border-radius: 8px; margin-bottom: 20px;">
+      <div class="holiday-card">
+        <img src="https://i.imgur.com/fathersdayBag.jpg" alt="Father's Day Bag" />
         <h3>Father's Day</h3>
-        <button>Shop Father's Day Gifts</button>
-      </div>
-      <div class="whats-hot-item">
-        <img src="https://i.imgur.com/bXKvWMi.jpg" alt="Graduation Gift" style="width:100%; border-radius: 8px; margin-bottom: 20px;">
-        <h3>Graduation Season</h3>
-        <button>Shop Graduation Gifts</button>
+        <p>Send dad something thoughtful and heartfelt that feels like a big hug.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-    <section id="mothers-day" class="holiday-section">
-        <div class="container">
-            <h2>Celebrate Her Magic 💐</h2>
-            <div class="gift-categories">
-                <button>For Moms</button>
-                <button>For Grandmothers</button>
-                <button>For Wives</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="fathers-day" class="holiday-section">
-        <div class="container">
-            <h2>For the Strongest Men We Know 💙</h2>
-            <div class="gift-categories">
-                <button>For Dads</button>
-                <button>For Grandfathers</button>
-                <button>For Husbands</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="graduation" class="holiday-section">
-        <div class="container">
-            <h2>Cheers to the Next Chapter 🎓</h2>
-            <div class="gift-categories">
-                <button>For Graduates</button>
-                <button>For Teachers</button>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Hug in a Bag | Send love in every sealed bag</p>
-    </footer>
-
-    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; padding: 40px 0;">
-        <!-- Contact Info -->
-        <div style="flex: 1; min-width: 250px;">
-            <h3>Contact Us</h3>
-            <p>Email: hello@huginabag.com</p>
-            <p>Phone: (555) 123-4567</p>
-            <p>Location: Bronx, NY</p>
-        </div>
-
-        <!-- Contact Form -->
-        <div style="flex: 1; min-width: 250px;">
-            <h3>Send a Message</h3>
-            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 10px;">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-
-        <!-- Wishlist -->
-        <div style="flex: 1; min-width: 250px;">
-            <h3>Quick Links</h3>
-            <p><img src="https://png.pngtree.com/png-clipart/20221213/ourmid/pngtree-pink-heart-with-black-outline-clipart-png-image_6522011.png" alt="Wishlist Icon" class="wishlist-icon"> <a href="#wishlist">Wishlist</a></p>
-        </div>
-    </div>
-    <p style="text-align: center; padding-top: 20px;">&copy; 2025 Hug in a Bag | Send love in every sealed bag</p>
-</footer>
+  <footer>
+    &copy; 2025 Hug in a Bag. All rights reserved.
+  </footer>
 
 </body>
 </html>
-
