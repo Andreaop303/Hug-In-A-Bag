@@ -1,152 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hug in a Bag – Send Love</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hug in a Bag</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Hug in a Bag</h1>
+      <p class="slogan">Send love in every sealed bag.</p>
+    </header>
 
-    header {
-      background-color: #fef9f8;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #eee;
-    }
-
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 28px;
-      color: #e29595;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #9c6b68;
-      font-weight: 500;
-    }
-
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #fff3f0;
-    }
-
-    .hero h1 {
-      font-size: 36px;
-      font-family: 'Playfair Display', serif;
-      color: #e38d8d;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-top: 10px;
-      color: #555;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 30px;
-      color: #d47171;
-      margin-bottom: 20px;
-    }
-
-    .holiday-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .holiday-card {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-
-    .holiday-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .holiday-card img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-    }
-
-    .holiday-card h3 {
-      margin: 15px;
-      font-size: 22px;
-      color: #b75e5e;
-    }
-
-    .holiday-card p {
-      margin: 0 15px 20px;
-      color: #777;
-    }
-
-    footer {
-      background: #fff8f6;
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #999;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="logo">Hug in a Bag</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Occasions</a>
-      <a href="#">Wishlist</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Send love in every sealed bag</h1>
-    <p>Curated gift bags for every moment worth celebrating</p>
-  </section>
-
-  <section class="section">
-    <h2>What's Hot</h2>
-    <div class="holiday-grid">
-      <div class="holiday-card">
-        <img src="https://i.imgur.com/mothersdayBag.jpg" alt="Mother's Day Bag" />
-        <h3>Mother's Day</h3>
-        <p>Celebrate mom with handwritten love, rose petals, and handmade touches.</p>
+    <section class="whats-hot">
+      <h2>What's Hot 🔥</h2>
+      <div class="holiday-grid">
+        <div class="holiday-card">
+          <img src="https://imagizer.imageshack.com/img924/7508/8xju57.png" alt="Mother's Day Bag" />
+          <h3>Mother's Day</h3>
+        </div>
+        <div class="holiday-card">
+          <img src="https://imagizer.imageshack.com/img923/4209/tPTmjn.png" alt="Father's Day Bag" />
+          <h3>Father's Day</h3>
+        </div>
+        <div class="holiday-card">
+          <img src="https://imagizer.imageshack.com/img923/7886/yRwSQi.png" alt="Graduation Gift Bag" />
+          <h3>Graduation Season</h3>
+        </div>
       </div>
-      <div class="holiday-card">
-        <img src="https://i.imgur.com/fathersdayBag.jpg" alt="Father's Day Bag" />
-        <h3>Father's Day</h3>
-        <p>Send dad something thoughtful and heartfelt that feels like a big hug.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    &copy; 2025 Hug in a Bag. All rights reserved.
-  </footer>
+    <section class="wishlist">
+      <h2>Your Wishlist 💖</h2>
+      <p>Add your favorite bags to your wishlist for later!</p>
+      <!-- Placeholder wishlist section -->
+      <ul>
+        <li>🌸 Mami Amor Bag</li>
+        <li>🎓 Grad Goodies Bag</li>
+        <li>💼 Dad’s Favorite Things</li>
+      </ul>
+    </section>
 
-</body>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Hug in a Bag. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
