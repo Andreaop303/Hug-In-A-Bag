@@ -1,184 +1,119 @@
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #f9f8fb;
-    color: #b28d88; /* Soft brown text color */
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
 }
 
 header {
-    background: linear-gradient(135deg, #f7d1d1, #ffb3c6); /* Subtle gradient */
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 2rem;
+  background-color: #fef1f6;
+  color: #b46a7c;
 }
 
-.logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    color: #ff77a9;
-    text-align: center;
-    letter-spacing: 1px;
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin: 0;
 }
 
-.logo .roses {
-    color: #ff90b3;
-}
-
-.logo .by-jenny {
-    color: #b28d88;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 15px;
-}
-
-nav a {
-    color: #b28d88;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: color 0.3s, transform 0.3s ease;
-}
-
-nav a:hover {
-    color: #ff77a9;
-    transform: scale(1.1); /* Slight zoom on hover */
-}
-
-.hero {
-    background: linear-gradient(135deg, #ffb3c6, #ff77a9); /* Soft gradient */
-    padding: 80px 0;
-    text-align: center;
-    color: white;
-    border-bottom: 5px solid #f0b1c1;
-}
-
-.hero h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.shop-now {
-    background-color: #ff77a9;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s ease;
-}
-
-.shop-now:hover {
-    background-color: #ff5577;
-    transform: scale(1.05);
+.slogan {
+  font-style: italic;
+  margin-top: 0.5rem;
 }
 
 .whats-hot {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #ffefef;
+  padding: 2rem;
+  text-align: center;
 }
 
 .whats-hot h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 30px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #d06a8a;
 }
 
-.whats-hot-items {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+.holiday-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 
-.whats-hot-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+.holiday-card {
+  width: 300px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #fff0f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.whats-hot-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.holiday-card img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-.whats-hot-item h3 {
-    font-family: 'Dancing Script', cursive;
-    color: #ff77a9;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+.holiday-card h3 {
+  margin-top: 0.75rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: #7a4752;
 }
 
-button {
-    background-color: #ff77a9;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s ease;
+.wishlist {
+  padding: 2rem;
+  background-color: #fffafc;
+  text-align: center;
 }
 
-button:hover {
-    background-color: #ff5577;
-    transform: scale(1.05);
+.wishlist ul {
+  list-style: none;
+  padding: 0;
 }
 
-.holiday-section {
-    padding: 60px 0;
-    background-color: #fff;
-    text-align: center;
-    margin-top: 50px;
+.wishlist li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
 }
 
-.holiday-section h2 {
-    font-family: 'Dancing Script', cursive;
-    color: #ff77a9;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+.contact {
+  padding: 2rem;
+  background-color: #fef1f6;
+  text-align: center;
 }
 
-.gift-categories {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact button {
+  background-color: #d06a8a;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 footer {
-    padding: 20px;
-    background: linear-gradient(135deg, #f7d1d1, #ffb3c6); /* Subtle gradient */
-    text-align: center;
-    color: #b28d88;
-    margin-top: 50px;
-    border-top: 2px solid #ff77a9;
+  text-align: center;
+  padding: 1rem;
+  background-color: #fce4ec;
+  color: #a35b6b;
 }
-
-footer p {
-    font-size: 1rem;
-    letter-spacing: 1px;
-}
-
