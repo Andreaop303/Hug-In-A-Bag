@@ -1,1 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f8fb;
+    color: #b28d88; /* Soft brown text color */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(135deg, #f7d1d1, #ffb3c6); /* Subtle gradient */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #ff77a9;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.logo .roses {
+    color: #ff90b3;
+}
+
+.logo .by-jenny {
+    color: #b28d88;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #b28d88;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff77a9;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.hero {
+    background: linear-gradient(135deg, #ffb3c6, #ff77a9); /* Soft gradient */
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid #f0b1c1;
+}
+
+.hero h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.shop-now {
+    background-color: #ff77a9;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.shop-now:hover {
+    background-color: #ff5577;
+    transform: scale(1.05);
+}
+
+.whats-hot {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ffefef;
+}
+
+.whats-hot h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.whats-hot-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.whats-hot-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whats-hot-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.whats-hot-item h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff77a9;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ff77a9;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5577;
+    transform: scale(1.05);
+}
+
+.holiday-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.holiday-section h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff77a9;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.gift-categories {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+footer {
+    padding: 20px;
+    background: linear-gradient(135deg, #f7d1d1, #ffb3c6); /* Subtle gradient */
+    text-align: center;
+    color: #b28d88;
+    margin-top: 50px;
+    border-top: 2px solid #ff77a9;
+}
+
+footer p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
 
