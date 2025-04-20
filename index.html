@@ -1,137 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hug in a Bag</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter&family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .wishlist-icon {
-            width: 20px;
-            height: 20px;
-            margin-right: 8px;
-            vertical-align: middle;
-        }
-        nav a {
-            display: inline-flex;
-            align-items: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hug in a Bag</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <span class="roses">Hug</span> <span class="by-jenny">in a Bag</span>
-            </div>
-           <nav>
-                <a href="#whats-hot">What's Hot</a>
-                <a href="#mothers-day">Mother's Day</a>
-                <a href="#fathers-day">Father's Day</a>
-                <a href="#graduation">Graduation</a>
-                <a href="#wishlist" style="color: #e26d9b; font-weight: bold;">
-                    <img src="https://png.pngtree.com/png-clipart/20221213/ourmid/pngtree-pink-heart-with-black-outline-clipart-png-image_6522011.png" alt="Wishlist" class="wishlist-icon">
-                    Wishlist
-                </a>
-            </nav>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h1>Welcome to Hug in a Bag!</h1>
-            <p>Send love in every sealed bag. Shop unique gifts for every occasion!</p>
-            <button class="shop-now">Shop Now</button>
-        </div>
-    </section>
-
-    <section id="whats-hot" class="whats-hot">
-        <div class="container">
-            <h2>What's Hot Right Now</h2>
-            <div class="whats-hot-items">
-                <div class="whats-hot-item">
-                    <img src="https://imagizer.imageshack.com/img924/7508/8xju57.png" alt="Mother’s Day Gift" style="width:100%; max-width: 600px; margin-bottom: 20px;">
-                    <h3>Mother's Day</h3>
-                    <button>Shop Mother's Day Gifts</button>
-                </div>
-                <div class="whats-hot-item">
-                    <img src="https://imagizer.imageshack.com/img923/4209/tPTmjn.png" alt="Father’s Day Gift" style="width:100%; max-width: 600px; margin-bottom: 20px;">
-                    <h3>Father's Day</h3>
-                    <button>Shop Father's Day Gifts</button>
-                </div>
-                <div class="whats-hot-item">
-                    <img src="https://imagizer.imageshack.com/img923/7886/yRwSQi.png" alt="Graduation Gift" style="width:100%; max-width: 600px; margin-bottom: 20px;">
-                    <h3>Graduation Season</h3>
-                    <button>Shop Graduation Gifts</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="mothers-day" class="holiday-section">
-        <div class="container">
-            <h2>Celebrate Her Magic 💐</h2>
-            <div class="gift-categories">
-                <button>For Moms</button>
-                <button>For Grandmothers</button>
-                <button>For Wives</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="fathers-day" class="holiday-section">
-        <div class="container">
-            <h2>For the Strongest Men We Know 💙</h2>
-            <div class="gift-categories">
-                <button>For Dads</button>
-                <button>For Grandfathers</button>
-                <button>For Husbands</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="graduation" class="holiday-section">
-        <div class="container">
-            <h2>Cheers to the Next Chapter 🎓</h2>
-            <div class="gift-categories">
-                <button>For Graduates</button>
-                <button>For Teachers</button>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Hug in a Bag | Send love in every sealed bag</p>
-    </footer>
-
-    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; padding: 40px 0;">
-        <!-- Contact Info -->
-        <div style="flex: 1; min-width: 250px;">
-            <h3>Contact Us</h3>
-            <p>Email: andre.ortega016@gmail.com</p>
-            <p>Phone: (929) 323-9892</p>
-            <p>Location: Bronx, NY</p>
-        </div>
-
-        <!-- Contact Form -->
-        <div style="flex: 1; min-width: 250px;">
-            <h3>Send a Message</h3>
-            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 10px;">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-
-        <!-- Wishlist -->
-        <div style="flex: 1; min-width: 250px;">
-            <h3>Quick Links</h3>
-            <p><img src="https://png.pngtree.com/png-clipart/20221213/ourmid/pngtree-pink-heart-with-black-outline-clipart-png-image_6522011.png" alt="Wishlist Icon" class="wishlist-icon"> <a href="#wishlist">Wishlist</a></p>
-        </div>
+  <header>
+    <div class="logo">
+      <span class="roses">Hug</span> <span class="by-jenny">in a Bag</span>
     </div>
-    <p style="text-align: center; padding-top: 20px;">&copy; 2025 Hug in a Bag | Send love in every sealed bag</p>
-</footer>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Wishlist</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
+  <section class="hero">
+    <h1>Send love in every sealed bag</h1>
+    <p>Curated gifts for every season of love & care</p>
+    <button class="shop-now">Shop Now</button>
+  </section>
+
+  <section class="whats-hot">
+    <h2>What’s Hot Right Now</h2>
+    <div class="whats-hot-items">
+      <div class="whats-hot-item">
+        <img src="https://imagizer.imageshack.com/img924/7508/8xju57.png" width="100%" alt="Mother's Day" />
+        <h3>Mother’s Day</h3>
+        <p>A heartfelt bag for every mami 💐</p>
+      </div>
+      <div class="whats-hot-item">
+        <img src="https://imagizer.imageshack.com/img923/4209/tPTmjn.png" width="100%" alt="Father's Day" />
+        <h3>Father’s Day</h3>
+        <p>Simple. Thoughtful. Classic.</p>
+      </div>
+      <div class="whats-hot-item">
+        <img src="https://imagizer.imageshack.com/img923/7886/yRwSQi.png" width="100%" alt="Graduation" />
+        <h3>Graduation Season</h3>
+        <p>Celebrate every cap thrown 🎓</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Hug in a Bag — Send love in every sealed bag.</p>
+  </footer>
 </body>
 </html>
